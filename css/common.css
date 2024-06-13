@@ -1,0 +1,107 @@
+body {min-width: 1200px ; font-family: "Noto Sans KR", sans-serif;}
+header {width: 100%; position: fixed; left: 0; top: 0; background-color: rgba(0, 0, 0, ); z-index: 30;}
+header .inner_header {margin: 0 auto; width: 100%; height: 60px; max-width: 1200px; display: flex; justify-content: space-between; align-items: center;} 
+header .inner_header h2 { font-family: "Raleway", sans-serif; font-size: 36px; font-weight: 400; color: #fff; cursor: pointer;}
+header .inner_header nav ul {display: flex;  gap: 20px;}
+header .inner_header nav ul li a {position: relative; font-weight: 300; color: #fff; }
+header .inner_header nav ul li a:after {content: "";width: 0; height: 1px;  display: inline-block;  position: absolute; left: 0; bottom: -1px; background-color: #fff; transition: all .3s ease-in-out;}
+header .inner_header nav ul li a:hover:after {width: 100%;}
+
+section {background-color: #141313; overflow-x: hidden;}
+section.gradient {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section.full {height: 100vh;}
+section.top .section_inner { height: 100%; display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center; }
+section.top h1 {font-family: "Raleway", sans-serif; font-size: 56px; font-weight: 600; text-align: center; color: #fff; position: relative;top: -50px;opacity: 0;transition: all .6s ease-in-out;  letter-spacing: 5em;}
+section.top h1.on { top: 0; opacity: 1; letter-spacing: 0.1em;}
+section.top p {font-family: "Raleway", sans-serif; position: relative; left: 0; font-size: 20px; font-weight: 600; color: #fff; letter-spacing: 0.2em; overflow: hidden; transition: all .6s ease-in-out; opacity: 0;}
+section.top p.on {opacity: 1;}
+
+
+section.about .section_inner {width: 100%; height: 100%; display: flex;  position: relative;}
+section.about .section_inner .img_box {position: relative; width: 50%; height: 100%; background: url("../resources/image/intro_bg.jpg")no-repeat center; background-size: cover; background-attachment: fixed;}
+section.about .section_inner .img_box .mask {width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.6); }
+section.about .section_inner .content {padding: 100px; flex: 1; display: flex; flex-direction: column;  justify-content: center; gap: 40px; }
+section.about .section_inner .content h3 {position: relative; top: -70px; opacity: 0;  font-size: 24px; color: #fff;  text-align: left; letter-spacing: -0.03em; transition: all .6s ease-in;}
+section.about .section_inner .content h3.on {top: 0px; opacity: 1;}
+section.about .section_inner .content p {position: relative; top: -70px; opacity: 0; font-size: 16px; font-weight: 300; color: #fff; letter-spacing: -0.045em; line-height: 1.8; word-break: keep-all; transition: all .6s ease-in;} 
+section.about .section_inner .content p.on {top: 0px; opacity: 1;}
+
+
+section .section_inner.default_layout {margin: 0 auto; padding-top: 180px; width: 100%; max-width: 1000px; position: relative; z-index: 20;}
+
+section .section_inner.default_layout h3.tit { margin-bottom: 60px; font-family: "Raleway", sans-serif; font-size: 36px; font-weight: 600;  text-align: center;}
+section .section_inner.default_layout h3.tit.type1 {color: #4fb051; }
+section .section_inner.default_layout h3.tit.type2 {color: #488594; }
+
+section.stack {position: relative; background: url("../resources/image/bg2.jpg")no-repeat center; background-size: cover; background-attachment: fixed;}
+section.stack .mask { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.8); }
+section.stack h3 {opacity: 0; transition: all .3s ease-in-out;}
+section.stack h3.on {opacity: 1;}
+section .section_inner.default_layout .stack_box {position: relative; left: -3000px; transition: all 1s ease-in-out;}
+section .section_inner.default_layout .stack_box.on {left: 0;}
+section .section_inner.default_layout .stack_box .stacks_tit { margin-bottom: 30px; padding-bottom: 8px; display: inline-block; position: relative; font-family: "Raleway", sans-serif; font-size: 20px; color: #4fb051; }
+section .section_inner.default_layout .stack_box .stacks_tit:after {content: ""; width: 100%; height: 2px;  display: inline-block; position: absolute; left: 0; bottom: -2px; background-color: #4fb051; }
+section .section_inner.default_layout .stack_box .stack_list {display: flex; flex-wrap: wrap; gap: 30px;}
+section .section_inner.default_layout .stack_box .stack_list li { width: 100px; height: 100px;  position: relative; }
+section .section_inner.default_layout .stack_box .stack_list li .list_inner {width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; position: absolute; top: 50%; background-color: #000;   border: 1px solid rgb(21, 21, 28); box-shadow:  0 0 4px rgba(255, 255, 255, 0.4); ;  overflow: hidden;  transform: translateY(-50%);}
+section .section_inner.default_layout .stack_box .stack_list li:hover .list_inner {padding-right: 180px; height: 120px;  z-index: 100; transition: all .3s ease-in-out; border-radius: 25px;}
+section .section_inner.default_layout .stack_box .stack_list li .list_inner span { min-width: 100px; min-height: 100px; display: flex; justify-content: center; align-items: center; }
+section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info { width: 170px; height: 120px; display: flex; flex-direction: column; justify-content: center;  position: absolute; left: 100px; }
+section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info h4 {margin-bottom: 10px;  font-size: 14px; font-weight: 400; color: #fff;}
+section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info p {font-size: 11px; font-weight: 300; color: #fff; line-height: 1.4; word-break: keep-all;}
+
+
+
+section.project {overflow-y: hidden;}
+section.project h3 {opacity: 0; transition: all .3s ease-in-out;}
+section.project h3.on {opacity: 1;}
+section .section_inner.default_layout .project_view {margin: 0 auto; padding-bottom: 40px; width: 800px; position: relative; bottom: -200px; opacity: 0; transition: all .5s ease-in-out;}
+section .section_inner.default_layout .project_view.on {bottom: 0; opacity: 1;}
+.main_swiper {min-height: 600px;}
+.main_swiper .inner_swiper {width: 100%; overflow: hidden;}
+.main_slide {display: flex; flex-direction: column; gap: 30px;} 
+.main_slide .sub_swiper  {width: 100%; box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);}
+.main_slide .sub_swiper img {width: 100%;}
+.main_slide .info { flex: 1;}
+.main_slide .info .project_tit {margin-bottom: 30px; font-size: 24px; font-weight: 600; color: #fff; }
+.main_slide .info .use_stack {margin-bottom: 20px; display: flex; gap: 10px;}
+.main_slide .info .use_stack li { padding: 4px 12px; display: flex; justify-content: center;align-items: center; gap: 5px; background-color: rgba(55, 55, 67, 0.6); border-radius: 10px; box-shadow: 2px 2px 2px rgba(14, 14, 14, 0.8);}
+.main_slide .info .use_stack li .ico {width: 24px; height: 24px; display: inline-block;}
+.main_slide .info .use_stack li p {font-family: "Raleway", sans-serif; font-size: 14px; color: #fff;}
+.main_slide .info .project_txt  {margin-bottom: 40px;}
+.main_slide .info .project_txt li {color: #fff; line-height: 1.6; word-break: keep-all;}
+.main_slide .info .url {padding-bottom: 40px; display: flex; gap: 10px;}
+.main_slide .info .url li a { padding: 8px 15px; font-size: 14px; color: #fff; letter-spacing: -0.03em;  display: inline-block; background-color: #36322b;}
+
+
+.main-swiper-button-prev {left: -50px;}
+.main-swiper-button-next {right: -50px;}
+
+.swiper-button-next, .swiper-button-prev {color: rgba(255, 255, 255, 0.5);}
+
+.sub_swiper .swiper-button-next, .sub_swiper .swiper-button-prev { color: #264de4; }
+.sub_swiper .swiper-button-next:after, .sub_swiper .swiper-button-prev:after {font-size: 24px;}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {  bottom: 0; }
+.swiper-scrollbar {background: none;}
+.swiper-scrollbar-drag {background-color: #264de4 }
+
+
+
+/* .contact_box {margin: 0 auto; padding: 30px; width: 100%; max-width: 300px; min-height: 400px; background: #000; border: 1px solid rgb(21, 21, 28);  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); border-radius: 10px;} */
+.contact_box {margin: 0 auto; padding: 30px; width: 100%; max-width: 300px; min-height: 400px;}
+.contact_box li {margin-bottom: 20px; padding-bottom: 10px; position: relative; font-size: 22px; font-weight: 300; color: #fff; }
+.contact_box li:after {content: ""; width: 100%; height: 1px; display: inline-block;  position: absolute; left: 0; bottom: 0; background-color: #fff;}
+
+section.contact { position: relative; background: url("../resources/image/bg3.jpg") no-repeat center; background-size: cover;  background-attachment: fixed;}
+section.contact .mask {width: 100%; height: 100%;  position: absolute; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.8);}  
+
+
+
+
+
