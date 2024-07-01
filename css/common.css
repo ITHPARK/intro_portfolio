@@ -1,4 +1,4 @@
-body {min-width: 1200px ; font-family: "Noto Sans KR", sans-serif;}
+body { font-family: "Noto Sans KR", sans-serif;}
 header {width: 100%; position: fixed; left: 0; top: 0; background-color: rgba(0, 0, 0, ); z-index: 30;}
 header .inner_header {margin: 0 auto; width: 100%; height: 60px; max-width: 1200px; display: flex; justify-content: space-between; align-items: center;} 
 header .inner_header h2 { font-family: "Raleway", sans-serif; font-size: 36px; font-weight: 400; color: #fff; cursor: pointer;}
@@ -104,4 +104,101 @@ section.contact .mask {width: 100%; height: 100%;  position: absolute; left: 0; 
 
 
 
+@media all and (max-width: 1200px) {
+    header {padding: 0 40px; width: 100%;}
+    header .inner_header nav ul {gap: 15px;}
+    header .inner_header h2 {font-size: 30px;}
 
+
+    section .section_inner.default_layout {padding-top: 60px;}
+
+
+    section.about .section_inner .content {padding: 60px;}
+    section.about .section_inner .content h3 {font-size: 20px; line-height: 1.2;}
+    section.about .section_inner .content p {font-size: 15px;}
+
+    
+    section .section_inner.default_layout h3.tit {margin-bottom: 50px; font-size: 32px;}
+    section .section_inner.default_layout .stack_box {padding: 0 40px;}
+    section .section_inner.default_layout .stack_box .stack_list { width: 100%; }
+    section .section_inner.default_layout .stack_box .stack_list li { width: calc(33% - 20px); height: unset;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner {padding: 10px; width: unset; justify-content: space-between; position: relative;}
+    section .section_inner.default_layout .stack_box .stack_list li:hover .list_inner {padding: 0; height: unset; border-radius: 0;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner span {width: auto; min-width: unset;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info h4 {margin-bottom: 8px;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info {height: 100px; position: unset;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info p {font-size: 10px;}
+
+    section .section_inner.default_layout .project_view {width: 600px;}
+    
+    .main_slide .info .project_tit {font-size: 20px;}
+    .main_slide .info .use_stack {gap: 8px;}
+    .main_slide .info .use_stack li {padding: 3px 8px;}
+    .main_slide .info .use_stack li p {font-size: 12px;}
+    .main_slide .info .project_txt li {font-size: 14px;}
+    .main_slide .info .url li a {padding: 6px 12px; font-size: 13px;}
+    .main_slide .info .url {padding-bottom: 30px;}
+    .main_swiper .swiper-wrapper {height: auto;}
+
+
+    .contact_box li {margin-bottom: 18px; font-size: 18px;}
+}
+
+
+@media all and (max-width: 1024px) {
+    header .inner_header h2 {font-size: 28px;}
+    header .inner_header nav ul li a {font-size: 14px;}
+    section.top .section_inner {gap: 15px;}
+    section.top h1 {font-size: 40px;}
+    section.top p {font-size: 18px;}
+    section.about .section_inner .img_box {width: 100%;}
+    section.about .section_inner .content {width: 100%; height: 100%; position: absolute; }
+
+    /* section.about.full {height: 600px;} */
+
+    section.stack.full {padding-bottom: 50px; height: auto;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner {height: unset; gap: 10px}
+    section .section_inner.default_layout .stack_box .stack_list li:hover .list_inner {padding: 10px;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info {height: unset;}
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner .stack_info h4 {font-size: 13px;}
+    
+
+    section .section_inner.default_layout .project_view {width: 100%; max-width: 600px; }
+}
+
+
+@media all and (max-width: 768px) {
+    section .section_inner.default_layout .stack_box .stack_list {gap: 20px;}
+    section .section_inner.default_layout .stack_box .stack_list li {width: calc(50% - 10px); }
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner {justify-content: center; gap: 20px;}
+    
+    section .section_inner.default_layout .project_view {}
+}
+
+
+@media all and (max-width: 430px) {
+    header {padding: 0 20px; width: 100%;}
+    header nav {display: none;}
+    section .section_inner.default_layout h3.tit  {margin-bottom: 40px; font-size: 28px;}
+    
+    
+    section.about .section_inner .content {padding: 40px;}
+
+    section .section_inner.default_layout .stack_box {padding: 0 20px;}
+    section .section_inner.default_layout .stack_box .stack_list {gap: 20px;}
+    section .section_inner.default_layout .stack_box .stack_list li {width: 100%; }
+    section .section_inner.default_layout .stack_box .stack_list li .list_inner {justify-content: center; gap: 20px;}
+
+    
+
+    section .section_inner.default_layout .project_view {padding: 0 20px;}
+
+    .swiper-button-next, .swiper-button-prev {display: none;}
+
+    .main_swiper {min-height: 400px;}
+    .main_slide .info .project_tit {margin-bottom: 20px; font-size: 18px;}
+    .main_slide .info .project_txt li {font-size: 13px;}
+    .main_slide .info .project_txt {margin-bottom: 20px;}
+
+    .contact_box li {margin-bottom: 16px; font-size: 16px;}
+}
